@@ -2,6 +2,7 @@
 
 * Студент: [Анна Манухина](https://up.htmlacademy.ru/htmlcss-individual/3/user/2376841).
 * Наставник: [Андрей Грачев](https://htmlacademy.ru/profile/angra).
+* Сайт: [Мой проект Седона](https://manyxinaanna1.github.io/2376841-sedona-3/).
 
 ---
 
