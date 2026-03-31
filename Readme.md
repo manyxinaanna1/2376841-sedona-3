@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Анна Манухина](https://up.htmlacademy.ru/htmlcss-individual/3/user/2376841).
-* Наставник: `Неизвестно`.
+* Наставник: [Андрей Грачев](https://htmlacademy.ru/profile/angra).
 
 ---
 
