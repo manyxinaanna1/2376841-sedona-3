@@ -27,8 +27,12 @@ body {
 .button {
   display: inline-block;
   font-family: inherit;
+  font-size: inherit;
   font-weight: 700;
   text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  border: none;
   border-radius: 4px;
 }
 
@@ -36,9 +40,28 @@ body {
   padding: 8px 34px;
 }
 
-.button-grey {
-  color: #ffffff;
+.button-main {
   background-color: #756157;
+}
+
+.button-secondary {
+  background-color: #82b3d3;
+}
+
+.button-favorities {
+  background-color: #7db54f;
+}
+
+.button-subscribe {
+  padding: 8px 50px;
+}
+
+.button-aply {
+  padding: 8px 50px;
+}
+
+.button-reset {
+  background-color: transparent;
 }
 
 /*Header*/
@@ -55,7 +78,7 @@ body {
 
 .hero {
   min-height: 485px;
-  background-color: #48484d;
+  background-color: green;
   background-image: url(../images/index-background.jpg);
   background-position: center center;
   background-repeat: no-repeat;
@@ -99,4 +122,100 @@ body {
   font-size: 24px;
   line-height: 28px;
   color: #000000;
+}
+
+/*Subscribe*/
+.subscribe-title {
+  color: #000000;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.subscribe-index {
+  color: #ffffff;
+  background-color: green;
+  background-image: url(../images/subscribe.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.subscribe-index .subscribe-title {
+  color: #ffffff;
+}
+
+/*Footer*/
+
+.contacts-phone {
+  color: #000000;
+  font-size: 40px;
+  line-height: 40px;
+  text-decoration: none;
+}
+
+/*Catalog*/
+
+/*Header*/
+.inner-header {
+  color: #ffffff;
+  background-color: green;
+  background-image: url(../images/inner-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.inner-header-title {
+  font-size: 60px;
+  line-height: 78px;
+  font-weight: 700;
+}
+
+.breadcrumbs-link {
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.catalog-filter-title {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.control-input {
+  line-height: 23px;
+}
+
+/*Hotels*/
+
+.hotels-title {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.hotels-card-title {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.hotels-card-price {
+  font-weight: 400;
+}
+
+/*Pagination*/
+
+.pagination-link {
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #82b3d3;
+}
+
+.pagination-current {
+  color: #000000;
+  background-color: #ffffff;
 }
