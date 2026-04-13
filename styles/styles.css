@@ -31,6 +31,11 @@ body {
   background-color: #ffffff;
 }
 
+.container {
+  margin: 0 auto;
+  width: 1200px;
+}
+
 .button {
   display: inline-block;
   font-family: inherit;
@@ -63,7 +68,7 @@ body {
   padding: 8px 50px;
 }
 
-.button-aply {
+.button-apply {
   padding: 8px 50px;
 }
 
@@ -91,8 +96,8 @@ body {
 
 .hero {
   min-height: 485px;
-  background-color: green;
-  background-image: url(../images/index-background.jpg);
+  background-color: #2F4F4F;
+  background-image: url("../images/index-background.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -103,6 +108,7 @@ body {
 .promo-header {
   font-size: 30px;
   line-height: 36px;
+  color: #000000;
 }
 
 .promo-text {
@@ -146,8 +152,8 @@ body {
 
 .subscribe-index {
   color: #ffffff;
-  background-color: green;
-  background-image: url(../images/subscribe.jpg);
+  background-color: #2F4F4F;
+  background-image: url("../images/subscribe.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -170,8 +176,8 @@ body {
 /*Header*/
 .inner-header {
   color: #ffffff;
-  background-color: green;
-  background-image: url(../images/inner-background.jpg);
+  background-color: #2F4F4F;
+  background-image: url("../images/inner-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
