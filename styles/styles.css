@@ -80,6 +80,27 @@ body {
 
 /*Header*/
 
+.header-nav {
+  display: flex;
+  width: 1060px;
+  margin: 0 auto;
+}
+
+.navigation-menu {
+  width: 470px;
+  margin-left: auto;
+}
+
+.navigation-user {
+  max-width: 300px;
+}
+
+.navigation-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
 .navigation-link {
   font-size: 20px;
   line-height: 24px;
@@ -116,6 +137,12 @@ body {
 .promo-text {
   font-size: 22px;
   line-height: 26px;
+}
+
+.advantages-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 .advantages-item-wide {
