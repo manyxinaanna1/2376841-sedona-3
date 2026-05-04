@@ -158,8 +158,9 @@ body {
   text-decoration: none;
 }
 
-.navigation-link:hover {
-  opacity: 0.5;
+.navigation-link:hover,
+.navigation-link:focus {
+  opacity: 0.3;
 }
 
 .navigation-link:active {
@@ -395,6 +396,15 @@ body {
   list-style-type: none;
 }
 
+.social-image path:hover,
+.social-image path:focus{
+  fill: #68a2ca;
+}
+
+.social-image path:active {
+  opacity: 0.3;
+}
+
 .contacts-phone {
   color: #000000;
   font-size: 40px;
@@ -402,12 +412,21 @@ body {
   text-decoration: none;
 }
 
+.contacts-phone:hover,
+.contacts-phone:focus {
+  color: #756157;
+}
+
+.contacts-phone:active {
+  opacity: 0.3;
+}
+
 .developer-link {
   width: 190px;
 }
 
-.developer-image {
-  display: block;
+.developer-image path:hover {
+  fill: #756157;
 }
 
 /*Catalog*/
@@ -443,6 +462,14 @@ body {
 .breadcrumbs-link {
   font-size: 16px;
   color: #ffffff;
+}
+
+.breadcrumbs-link:hover {
+  opacity: 0.6;
+}
+
+.breadcrumbs-link:active {
+  opacity: 0.3;
 }
 
 .catalog-filter {
@@ -555,6 +582,15 @@ body {
   text-decoration: none;
   color: #ffffff;
   background-color: #82b3d3;
+}
+
+.pagination-link:hover,
+.pagination-link:focus {
+  background-color: #68a2ca;
+}
+
+.pagination-link:active {
+  opacity: 0.3;
 }
 
 .pagination-current {
