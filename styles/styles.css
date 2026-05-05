@@ -70,6 +70,7 @@ body {
   color: #ffffff;
   border: none;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .button-want {
@@ -81,12 +82,51 @@ body {
   background-color: #756157;
 }
 
+.button-main:hover,
+.button-main:focus {
+  background-color: #615048;
+}
+
+.button-main:active {
+  opacity: 0.3;
+}
+
+.button-main:disabled {
+  background-color: #e5e5e5;
+}
+
 .button-secondary {
   background-color: #82b3d3;
 }
 
+.button-secondary:hover,
+.button-secondary:focus {
+  background-color: #68a2ca;
+}
+
+.button-secondary:active {
+  opacity: 0.3;
+}
+
+.button-secondary:disabled {
+  background-color: #e5e5e5;
+}
+
 .button-favorities {
   background-color: #7db54f;
+}
+
+.button-favorities:hover,
+.button-favorities:focus {
+  background-color: #6c9e42;
+}
+
+.button-favorities:active {
+  opacity: 0.3;
+}
+
+.button-favorities:disabled {
+  background-color: #e5e5e5;
 }
 
 .button-large {
@@ -111,6 +151,22 @@ body {
 
 .button-reset {
   background-color: transparent;
+}
+
+.button-reset:hover {
+  opacity: 0.6;
+}
+
+.button-reset:focus {
+  border: 1px solid #82b3d3;
+}
+
+.button-reset:active {
+  opacity: 0.3;
+}
+
+.button-reset:disabled {
+    opasity: 0.1;
 }
 
 /*Header*/
@@ -165,6 +221,16 @@ body {
 
 .navigation-link:active {
   fill: rgba(117, 98, 87, 0.3);
+}
+
+.navigation-link-current::before {
+  position: absolute;
+  right: 20px;
+  bottom: 0;
+  left: 20px;
+  height: 4px;
+  background-color: #000000;
+  content: "";
 }
 
 .count {
@@ -396,12 +462,12 @@ body {
   list-style-type: none;
 }
 
-.social-image path:hover,
-.social-image path:focus{
+.social-link path:hover,
+.social-link path:focus{
   fill: #68a2ca;
 }
 
-.social-image path:active {
+.social-link path:active {
   opacity: 0.3;
 }
 
@@ -422,11 +488,21 @@ body {
 }
 
 .developer-link {
+  display: flex;
   width: 190px;
 }
 
-.developer-image path:hover {
+.developer-image {
+  margin-left: auto;
+}
+
+.developer-link path:hover,
+.developer-link path:focus {
   fill: #756157;
+}
+
+.developer-link path:active {
+  opacity: 0.3;
 }
 
 /*Catalog*/
@@ -511,6 +587,55 @@ body {
   justify-content: space-between;
 }
 
+.hotels-title {
+  margin: 0;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.sorts-list {
+  display: flex;
+  gap: 5px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.sort-link {
+  width: 48px;
+  height: 48px;
+  padding: 16px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.sort-cards {
+  background-image: url("../images/icons/cards-icon.svg");
+}
+
+.sort-cards-with-description {
+  background-image: url("../images/icons/cards-with-description.svg");
+}
+
+.sort-cards-list {
+   background-image: url("../images/icons/cards-list.svg");
+}
+
+.sort-current {
+  border: 1px solid #000000;
+}
+
+.sort-cards:hover,
+.sort-cards:active {
+  border: 1px solid #000000;
+}
+
+.sort-cards:focus {
+  border: 1px solid #68a2ca;
+}
+
 .hotels-list {
   display: grid;
   grid-template-columns: repeat(3, 340px);
@@ -520,18 +645,10 @@ body {
   list-style-type: none;
 }
 
-.hotels-title {
-  margin: 0;
-  font-size: 30px;
-  line-height: 36px;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
 .hotels-card {
   display: grid;
   grid-template-columns: repeat(2, 140px);
-  grid-template-rows: 212px min-content min-content min-content min-content;
+  grid-template-rows: auto min-content min-content min-content min-content;
   gap: 16px;
   padding: 20px;
 }
@@ -544,13 +661,11 @@ body {
 
 
 .hotels-card-image {
-  grid-column: 1 / -1;
   display: block;
   margin-bottom: 16px;
 }
 
 .hotels-card-title {
-  grid-column: 1 / -1;
   margin: 0;
   font-size: 24px;
   line-height: 28px;
@@ -562,7 +677,27 @@ body {
   font-weight: 400;
 }
 
+.star {
+    width: 23px;
+    margin: 0;
+    min-height: 37px;
+    background-repeat: repeat-x;
+    background-position: 0 50%;
+    background-size: 23px 17px;
+    background-image: url(../images/icons/star.svg);
+}
 
+.star-two {
+    width: 46px;
+}
+
+.star-three {
+    width: 69px;
+}
+
+.star-four {
+    width: 92px;
+}
 
 /*Pagination*/
 
@@ -584,12 +719,12 @@ body {
   background-color: #82b3d3;
 }
 
-.pagination-link:hover,
-.pagination-link:focus {
+.pagination-link[href="#"]:hover,
+.pagination-link[href="#"]:focus {
   background-color: #68a2ca;
 }
 
-.pagination-link:active {
+.pagination-link[href="#"]:active {
   opacity: 0.3;
 }
 
