@@ -146,6 +146,8 @@ body {
 }
 
 .button-apply {
+  min-height: 48px;
+  margin-bottom: 16px;
   padding: 8px 50px;
 }
 
@@ -228,7 +230,7 @@ body {
   right: 20px;
   bottom: 0;
   left: 20px;
-  height: 4px;
+  height: 2px;
   background-color: #000000;
   content: "";
 }
@@ -609,60 +611,122 @@ body {
 }
 
 .control {
-    position: relative;
-    display: block;
+  position: relative;
+  display: block;
 }
 
 .control-input {
-    position: absolute;
-    top: 2px;
-    width: 1px;
-    height: 1px;
-    margin: 0;
-    opacity: 0;
-  }
-
-  .control-lead {
-    display: grid;
-    grid-template-columns: 20px 1fr;
-    gap: 19px;
-    line-height: 24px;
+  position: absolute;
+  top: 2px;
+  width: 1px;
+  height: 1px;
+  margin: 0;
+  opacity: 0;
 }
 
-  .control-lead::before, .control-lead::after {
-    content: "";
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-    height: 20px;
-    margin-top: 2px;
+.control-lead {
+  display: grid;
+  grid-template-columns: 20px 1fr;
+  gap: 19px;
+  line-height: 24px;
+}
+
+.control-lead::before,
+.control-lead::after {
+  content: "";
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  height: 20px;
+  margin-top: 2px;
 }
 
 .control-lead::before {
-    background-color: #ffffff;
-    border-radius: 4px;
+  background-color: #ffffff;
+  border-radius: 4px;
 }
 
 .control-lead::after {
-    display: none;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-image: url(../images/icons/check.svg);
+  display: none;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-image: url(../images/icons/check.svg);
 }
 
 .control-input:checked + .control-lead::after {
-    display: block;
+  display: block;
 }
 
 .control-input[type="radio"] + .control-lead::before {
-    border-radius: 50%;
+  border-radius: 50%;
 }
 
 .control-input[type="radio"] + .control-lead::after {
-    background-color: #3f5e72;
-    background-image: none;
-    background-clip: content-box;
-    border: 5px solid transparent;
-    border-radius: 50%;
+  background-color: #3f5e72;
+  background-image: none;
+  background-clip: content-box;
+  border: 5px solid transparent;
+  border-radius: 50%;
+}
+
+.range {
+  margin-top: 35px;
+}
+
+.range-fields {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.range-field {
+  position: relative;
+}
+
+.range-field:first-child {
+  order: -1;
+}
+
+.range-title {
+  position: absolute;
+  top: 50%;
+  right: 13px;
+  transform: translateY(-50%);
+  opacity: 0.3;
+}
+
+.range-input {
+  width: 145px;
+  height: 48px;
+  padding: 20px;
+  border: 1px solid white;
+  color: #ffffff;
+  background-color: transparent;
+  font-family: inherit;
+  font-size: 18px;
+}
+
+.range-slider {
+  margin-top: 28px;
+}
+
+.slider {
+  height: 4px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.slider-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  background-color: #ffffff;
+}
+
+.slider-thumb {
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 5px;
 }
 
 /*Hotels*/
