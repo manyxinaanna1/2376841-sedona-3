@@ -313,7 +313,7 @@ body {
 .advantages-item {
   width: 400px;
   min-height: 385px;
-  padding: 102px 85px;
+  padding: 100px 85px;
 }
 
 .advantages-image-wrapper {
@@ -462,6 +462,27 @@ body {
   margin: 0;
   padding: 0;
   list-style-type: none;
+}
+
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-vk {
+  width: 24px;
+  height: 14px;
+}
+
+.social-telegram {
+   width: 18px;
+  height: 16px;
+}
+
+.social-youtube {
+  width: 22px;
+  height: 17px;
 }
 
 .social-link path:hover,
@@ -757,6 +778,7 @@ body {
 }
 
 .sort-link {
+  display: block;
   width: 48px;
   height: 48px;
   padding: 16px;
@@ -863,6 +885,8 @@ body {
 }
 
 .pagination-link {
+  display: block;
+  min-width: 60px;
   padding: 11px 18px;
   font-size: 20px;
   line-height: 36px;
